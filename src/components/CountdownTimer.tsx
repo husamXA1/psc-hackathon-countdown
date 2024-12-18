@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 const CountdownTimer: React.FC = () => {
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2024-12-28T23:59:00+02:00'); // Event date in GMT+2
+    const eventDate = new Date('2024-12-29T00:00:00+02:00'); // Event date in GMT+2
     const now = new Date();
     const difference = eventDate.getTime() - now.getTime();
 
