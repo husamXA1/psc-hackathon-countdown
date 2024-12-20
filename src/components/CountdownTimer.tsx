@@ -52,7 +52,7 @@ const CountdownTimer: React.FC = () => {
           <span className='text-sm md:text-lg'> Left</span>
         </div>
       ) : (
-        <span>The event has started!</span>
+        <span className='text-lg md:text-2xl'>The event has ended!</span>
       )}
     </div>
     </div>
