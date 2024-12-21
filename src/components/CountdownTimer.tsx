@@ -40,7 +40,7 @@ const CountdownTimer: React.FC = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container mx-auto">
       <div className='counter-card text-center mx-auto px-3 md:px-10 py-20 rounded-xl shadow-lg'>
       <h1 className='text-2xl md:text-5xl mb-2 md:mb-8'>PSC Hackathon</h1>
       {timeLeft ? (
