@@ -8,6 +8,11 @@
   src: url('/fonts/SpaceMono-Bold.ttf');
 }
 
+@font-face {
+  font-family: "Seven Segment";
+  src: url('/fonts/7-segments-display.ttf');
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -33,6 +38,10 @@ body {
 h1 {
   color: var(--main-color);
   font-weight: 900;
+}
+
+.counter {
+  font-family: 'Seven Segment', monospace;
 }
 
 .container {
