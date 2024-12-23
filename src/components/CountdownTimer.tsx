@@ -45,6 +45,7 @@ const CountdownTimer: React.FC = () => {
       <h1 className='text-2xl md:text-5xl mb-2 md:mb-8'>PSC Hackathon</h1>
       {timeLeft ? (
         <div>
+          <h2 className='text-lg md:text-2xl mb-3'>Time Left</h2>
           <div className="counter-header grid grid-cols-4 gap-2 text-sm md:text-xl">
             <span>DAYS</span>
             <span>HOURS</span>
@@ -57,7 +58,6 @@ const CountdownTimer: React.FC = () => {
             <span>{formatTime(timeLeft.minutes)}</span>
             <span>{formatTime(timeLeft.seconds)}</span>
           </div>
-          <span className='text-sm md:text-lg'>LEFT</span>
         </div>
       ) : (
         <span className='text-lg md:text-2xl'>The event has ended!</span>
