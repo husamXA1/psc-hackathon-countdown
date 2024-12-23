@@ -33,10 +33,6 @@ h1 {
   font-weight: 900;
 }
 
-.counter {
-  font-family: 'Seven Segment', monospace;
-}
-
 .container {
   min-height: 90vh;
   display: flex;
@@ -49,4 +45,14 @@ h1 {
   border: 2px solid black;
   width: 90%;
   max-width: 600px;
+}
+
+.counter {
+  font-family: 'Seven Segment', monospace;
+}
+
+.counter span {
+  background-color: var(--background);
+  padding: 20px 0;
+  box-shadow: 0 0 5px inset var(--foreground);
 }
