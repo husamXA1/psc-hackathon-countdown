@@ -38,13 +38,6 @@ h1 {
   font-weight: 900;
 }
 
-.container {
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .counter-card {
   background-color: rgba(33, 5, 49, 0.7);
   border: 2px solid black;

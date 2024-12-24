@@ -40,34 +40,36 @@ const CountdownTimer: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto">
-      <div className="counter-card text-center mx-auto px-3 md:px-10 py-20 rounded-xl shadow-lg">
-        <h1 className="text-2xl md:text-5xl mb-2 md:mb-8">PSC Hackathon</h1>
-        <div>
-          <h2 className="text-lg md:text-2xl mb-3">Time Left</h2>
-          <div className="counter-header grid grid-cols-4 gap-2 text-sm md:text-xl">
-            <span>DAYS</span>
-            <span>HOURS</span>
-            <span>MINUTES</span>
-            <span>SECONDS</span>
-          </div>
-          <div className={`counter text-2xl md:text-5xl grid grid-cols-4 gap-2 ${timeLeft ? "" : "end-counter"}`}>
-            {timeLeft ? (
-              <>
-                <span>{formatTime(timeLeft.days)}</span>
-                <span>{formatTime(timeLeft.hours)}</span>
-                <span>{formatTime(timeLeft.minutes)}</span>
-                <span>{formatTime(timeLeft.seconds)}</span>
-              </>
-            ) : (
-              <>
-                <span>E</span>
-                <span>N</span>
-                <span>D</span>
-                <span>!</span>
-              </>
-            )}
-          </div>
+    <div className="counter-card text-center my-10 mx-auto px-3 md:px-10 py-20 rounded-xl shadow-lg">
+      <h1 className="text-2xl md:text-5xl mb-2 md:mb-8">PSC Hackathon</h1>
+      <div>
+        <h2 className="text-lg md:text-2xl mb-3">Time Left</h2>
+        <div className="counter-header grid grid-cols-4 gap-2 text-sm md:text-xl">
+          <span>DAYS</span>
+          <span>HOURS</span>
+          <span>MINUTES</span>
+          <span>SECONDS</span>
+        </div>
+        <div
+          className={`counter text-2xl md:text-5xl grid grid-cols-4 gap-2 ${
+            timeLeft ? "" : "end-counter"
+          }`}
+        >
+          {timeLeft ? (
+            <>
+              <span>{formatTime(timeLeft.days)}</span>
+              <span>{formatTime(timeLeft.hours)}</span>
+              <span>{formatTime(timeLeft.minutes)}</span>
+              <span>{formatTime(timeLeft.seconds)}</span>
+            </>
+          ) : (
+            <>
+              <span>E</span>
+              <span>N</span>
+              <span>D</span>
+              <span>!</span>
+            </>
+          )}
         </div>
       </div>
     </div>
