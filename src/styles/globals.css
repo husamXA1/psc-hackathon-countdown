@@ -9,8 +9,13 @@
 }
 
 @font-face {
-  font-family: "Seven Segment";
+  font-family: "7 Segment";
   src: url('/fonts/7-segments-display.ttf');
+}
+
+@font-face {
+  font-family: "Seven Segment";
+  src: url('/fonts/Seven Segment.ttf');
 }
 
 :root {
@@ -48,7 +53,7 @@ h1 {
 }
 
 .counter {
-  font-family: 'Seven Segment', monospace;
+  font-family: '7 Segment', monospace;
 }
 
 .counter span {
@@ -56,4 +61,14 @@ h1 {
   padding: 20px 0;
   box-shadow: 0 0 5px inset var(--foreground);
   border-radius: 5px;
+}
+
+.end-counter {
+  font-family: "Seven Segment";
+  color: var(--main-color);
+}
+
+.end-counter span {
+  box-shadow: 0 0 5px inset var(--main-color);
+  font-weight: 900;
 }
