@@ -40,7 +40,7 @@ const TeamsList: React.FC = () => {
         <div className="card text-center my-5 mx-auto px-3 md:px-10 py-5 rounded-xl shadow-lg">
             <h1 className="text-3xl mb-5">Teams</h1>
             <ul>
-                { shuffleArray(teams).map((team, index) => <li key={index}>{team}</li>) }
+                { shuffleArray(teams).map((team, index) => <li className="text-lg md:text-xl" key={index}>{team}</li>) }
             </ul>
         </div>
     )
