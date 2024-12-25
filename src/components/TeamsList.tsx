@@ -23,7 +23,8 @@ const teams = [
     "Winners",
     "أولاد إبراهيم للكمبيوتر",
     "بتتجاااازف",
-    "فكر وابدع"
+    "فكر وابدع",
+    "م عندي اسم"
 ]
 
 function shuffleArray(array: string[]): string[] {
