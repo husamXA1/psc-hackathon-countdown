@@ -1,5 +1,5 @@
 const teams = [
-    "Alhdry",
+    "خليها على الله",
     "Alnassrh",
     "Brashogam",
     "Code master",
