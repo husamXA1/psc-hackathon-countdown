@@ -24,7 +24,8 @@ const teams = [
     "أولاد إبراهيم للكمبيوتر",
     "بتتجاااازف",
     "فكر وابدع",
-    "م عندي اسم"
+    "م عندي اسم",
+    "Qurnfula"
 ]
 
 function shuffleArray(array: string[]): string[] {
